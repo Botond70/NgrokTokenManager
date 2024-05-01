@@ -1,5 +1,8 @@
 # NgrokTokenManager
 Egy nem feltétlen hasznos ngrok authentication token manager
+használat előtt, legalább két tokent bele kell rakni a tokenek.bac text fileba
+
+
 
 syntax: python ngrokmanager.py (lbi(n|d)) [int for n|d]
 
