@@ -2,7 +2,7 @@
 Egy nem feltétlen hasznos ngrok authentication token manager
 
 használat előtt, legalább két tokent bele kell rakni a tokenek.bac text fileba
-.
+
 
 .
 
