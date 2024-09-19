@@ -1,6 +1,8 @@
 from os import system
 import sys
 counter = 0
+#edit configpath for your instance
+configpath = "C:/Users/boton/.ngrok2/ngrok.yml"
 
 try:
     with open("c.txt",'r') as c:
@@ -47,11 +49,18 @@ def next(c,t):
         print("incremented counter, next token")
     else: print("error with incrementing")
     return c
-    
+
+
     
 def inject(ttt):
-        print("ngrok config add-authtoken " + ttt)
-        system("ngrok config add-authtoken " + ttt)
+    """
+    print("ngrok config add-authtoken " + ttt)
+    system("ngrok config add-authtoken " + ttt)
+    """
+    with open(configpath,"w") as file:
+        file.write("authtoken: " + ttt + "\nregion: eu\nversion: \"2\"\n")   
+    
+    return
 
     
 def drop(c: int,t):
