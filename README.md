@@ -1,8 +1,6 @@
 # NgrokTokenManager
-Egy nem feltétlen hasznos ngrok authentication token manager
-
-használat előtt, legalább két tokent bele kell rakni a tokenek.bac text fileba
-
+A semi useful Ngrok authentication token manager.
+before use: put 2 tokens inside the tokens.bac txt file!
 
 .
 
