@@ -3,20 +3,16 @@ A semi useful Ngrok authentication token manager.
 
 ## Before use: put 2 tokens inside the tokens.bac txt file!
 
-.
+Static cli-mode syntax: python ngrokmanager.py (lbi(n|d)) [int for n|d]
 
-.
+l - loads the tokens from the tokens.txt file.
 
-syntax: python ngrokmanager.py (lbi(n|d)) [int for n|d]
+b - loads the tokens from the tokens.bac file, doesn't work unless there are at least 2 tokens inside the tokens.bac file!
 
-l - load, betölti a tokenek.txt fileban lévő tokeneket, ha üres, akkor létrehozza, és feltölti a backupból
+i - injects the corresponding authtoken in the list into the .yml file.
 
-b - betölti a tokenek.bac fileban lévő tokeneket, HA NINCS LEGALÁBB 2 TOKEN BENNE NEM MŰKÖDIK!!!
+n [int] - cycles onto next token, uses the default n=0.
 
-i - lefuttatja az ngrok config add-authtoken {token} parancsot az os-el, akkor működik, ha az ngrok.exe3 parancsfile-al egy mappában van a program!
+d [int] - drops the nth token from the list, useful for debugging, but can destroy the internal counter of the program if you provide wrong input. use carefully
 
-n [int] - új tokenre lép át, az int-el megadható hányszor lépjen, default = 0
-
-d [int] - droppolja a jelenlegi tokent a listából, és nem menti el a tokenek.txt-be
-
-az utóbbi két paraméter nem kompatibilis egymással
+the last 2 parameters are NOT compatible with eachother.
