@@ -135,7 +135,7 @@ def main():
     with open("counter.txt","w") as c:
         c.write(str(counter))
         
-    with open("tokenek.txt","w") as t:
+    with open("tokens.txt","w") as t:
         for i in tokens:
             t.write(i+"\n")
     print("\n\nexiting program...\n")
