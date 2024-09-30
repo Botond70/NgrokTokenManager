@@ -1,6 +1,7 @@
 # NgrokTokenManager
 A semi useful Ngrok authentication token manager.
-before use: put 2 tokens inside the tokens.bac txt file!
+
+## Before use: put 2 tokens inside the tokens.bac txt file!
 
 .
 
